@@ -2,11 +2,14 @@ package main
 
 import (
 	"fmt"
-	"net/http")
+	"log"
+	"net/http"
+)
 
 
 func helloWorld(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w,"Hello world")
+	log.Println("Hello World")
 } 
 
 func main() {
